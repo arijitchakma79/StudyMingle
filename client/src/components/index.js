@@ -5,4 +5,5 @@ export {default as TeamChannelList} from './teamChannelList';
 export {default as TeamChannelPreview} from './teamChannelPreview';
 export {default as Auth} from './auth';
 export {default as SignInForm} from './signInForm';
+export {default as SignUpForm} from './signUpForm';
 
