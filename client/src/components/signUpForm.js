@@ -1,22 +1,25 @@
 import React, { useState } from "react";
 
 const SignUpForm = () => {
-    
+
 const [fullName, setFullName] = useState("");
 const [username, setUsername] = useState("");
 const [emailAddress, setEmailAddress] = useState("");
 const [phoneNumber, setPhoneNumber] = useState("");
 const [password, setPassword] = useState("");
 const [confirmPassword, setConfirmPassword] = useState("");
+const formData = {
+    name: fullName,
+    user_name : username,
+    email_address : emailAddress ,
+    phoneNumber: phoneNumber,
+    password: password,
+    confirm_password : confirmPassword
+}
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Full Name:", fullName);
-    console.log("Username:", username);
-    console.log("Email:", emailAddress);
-    console.log("Phone Number:", phoneNumber);
-    console.log("Password:", password);
-    console.log("Confirm Password:", confirmPassword);
+    console.log(formData)
   };
 
   return (
